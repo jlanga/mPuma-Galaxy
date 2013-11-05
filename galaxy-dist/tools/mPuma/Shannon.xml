@@ -1,0 +1,27 @@
+<tool id="Shannon" name="Perform a Shannon test" version="0.0.1">
+	<description>It performs a Shannon test in using a BIOM file as input</description>
+
+	<command interpreter="Rscript">Shannon.R $input > $output </command>
+		
+	<inputs>
+		<param name="input" type="data" label="BIOM file"/>		
+	</inputs>
+	<outputs>
+		<data format="text" name="output" />
+	</outputs>
+
+	<help>
+
+
+**Usage**
+
+  Upload a BIOM file or redirect from another tool
+
+
+**Contact**
+
+  Please send any request or comment to mikel.egana.aranguren@gmail.com.
+
+	</help>
+
+</tool>
