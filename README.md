@@ -29,14 +29,11 @@ System dependencies (You can check that they are met by runing the Galaxy functi
 Galaxy dependencies (Galaxy tools that should be installed in Galaxy):
 
 * Galaxy tools included in a default Galaxy installation (No need to install but included here for completeness):
-
-..* Convert formats; SFF converter
+  * Convert formats; SFF converter
 
 * Extra galaxy tools that need to be installed from the tool shed:
-
-..* NGS RNA analysis ; De novo assembly; trinity (included by need to uncomment and edit!!!)
-
-..* blastx old 
+  * NGS RNA analysis ; De novo assembly; trinity (included by need to uncomment and edit!!!)
+  * blastx old 
 
 ### Procedure
 
