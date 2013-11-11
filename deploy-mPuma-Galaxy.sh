@@ -2,9 +2,11 @@
 
 # This script copies and edits the necesary files to deploy mPuma tools in a galaxy server
 
+# !!! Dangerous and fragile !!!
+
 # Stop Galaxy
 
-# Change Galaxy path in first variable to fit your path
+# Change Galaxy path in variable "galaxy" to fit your path
 
 galaxy="/home/mikel/galaxy-dist/"
 

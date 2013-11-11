@@ -16,5 +16,6 @@ suppressMessages(library(biom))
 # min_dense_file <- "/home/mikel/UPM/mPUMA-Galaxy/biom/biom-format-1.2.0/examples/min_dense_otu_table.biom"
 biom_file <- args[1]
 x1 = read_biom(biom_file)
-H <- diversity(as(biom_data(x1), "matrix"))
+# H <- diversity(as(biom_data(x1), "matrix"))
+H <- diversity((as(biom_data(x1), "matrix")), index = "shannon")
 H
