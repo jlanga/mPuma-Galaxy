@@ -4,46 +4,63 @@ mPuma-Galaxy (0.0.1)
 About
 -----
 
-A re-implementation of the mPuma pipeline (http://mpuma.sourceforge.net/) for the Galaxy platform (http://galaxyproject.org/). mPuma does bla bla bla ... 
+This is a new implementation of the mPuma pipeline (http://mpuma.sourceforge.net/) for the Galaxy platform (http://galaxyproject.org/). mPuma allows researchers to profile microbial communities using a *de novo* assembly approach to form Operational Taxonomic Units (OTUs). While originally designed to support the analysis of cpn60 based amplicons, mPUMA can be used to analyze data from any suitable DNA barcode.
 
-The original mPuma pipeline has been decomposed into independent and usefull tools. The pipeline is already installed and tested at biordf:8093. You can have a look at this Galaxy page for a test dataset and workflow (original study to test mPuma). 
+The original mPuma pipeline was implemented as a standalone terminal program. For this new implementation it has been decomposed into a suite of independent tools: the mPuma pipeline is executed as a Galaxy workflow, making it easier to run, debug, and generally more usefull, since some of the tools are new and also subpipelines can be easilly configured.
 
-The workflow can be found at: 
-
-You can also install the tool suite at your own Galaxy server, see bellow for details.
-
-mPuma-Galaxy is a collection of newly developed and already existing Galaxy tools. The new tools are ... For the already exisintg tools see dependencies bellow 
+The pipeline is already installed at http://biordf:8983 (See section Using mPuma-Galaxy bellow). You can also install the tool suite at your own Galaxy server (recommended).
 
 Installation
 ------------
 
-### Dependencies
+### Requirements
 
-System dependencies (You can check that they are met by runing the Galaxy functional tests, e.g. `./run_functional_tests.sh -id Shannon`):
+Server dependencies (You can check that they are met by runing the Galaxy functional tests, e.g. `./run_functional_tests.sh -id Shannon`). Make sure they are available in the `$PATH` env variable:
 
-* R 3.0 or higher
+* R 3.0 or higher (including packages biom, vegan, ...)
 * Rscript
-* R packages: biom, vegan
 * Bioperl?
+* Samtools?
 
-Galaxy dependencies (Galaxy tools that should be installed in Galaxy):
+Galaxy dependencies:
 
-* Galaxy tools included in a default Galaxy installation (No need to install but included here for completeness):
+* Galaxy tools included in a default Galaxy installation (No need to install but added here for completeness):
   * Convert formats; SFF converter
+  * NGS: QC and manipulation; FASTQ groomer
+  * Bowtie2
+  
+* Galaxy tools already installed but need some configuration:
+  * NGS RNA analysis; De novo assembly; trinity: uncomment in tool_conf.xml
 
-* Extra galaxy tools that need to be installed from the tool shed:
-  * NGS RNA analysis ; De novo assembly; trinity (included by need to uncomment and edit!!!)
-  * blastx old 
-
+* Extra galaxy tools that need to be installed (most likely through the tool shed):
+  * NGS: SAM tools http://wiki.galaxyproject.org/Admin/NGS%20Local%20Setup ???
+  * blastx old ???
+  * All the new tools included in this bundle (See Procedure bellow to install): Simpson, Shannon, create_ace_toc_SAM, ... 
+  
 ### Procedure
 
-No toolshed version yet for automated installation. Stop Galaxy and either:
+In order to install the tools of this bundle, there is no toolshed version yet for automated installation. Stop Galaxy and either:
 
-* Unpack and execute `deploy-mPuma-Galaxy.sh` at your own risk. The script will copy the necessary files and edit `tool-conf.xml`. You need to edit the `galaxy` variable and add the path to yor galaxy distribution.
+* Unpack and execute `deploy-mPuma-Galaxy.sh` at your own risk. The script will copy the necessary files and edit `tool-conf.xml`. You need to edit the `galaxy` variable and add the path to your galaxy distribution.
 
-* Unpack and install manually (perform the steps that are automated by the above script). Copy the whole directory `galaxy-dist/tools/mPuma/` to the `tools` directory on your Galaxy system. Same for `test-data`. Then edit `tool-conf.xml` to include the same content as `galaxy-dist/tool_conf.xml`, except the `</toolbox>` tag. This way you can the mPuma tool suite in the place you like in the menu. 
+* Unpack and install manually (perform the steps that are automated by the above script). Copy the whole directory `galaxy-dist/tools/mPuma/` to the `tools` directory on your Galaxy system. Same for `test-data`. Then edit `tool-conf.xml` to include the same content as `galaxy-dist/tool_conf.xml`, except the `</toolbox>` tag. This way you can add the mPuma tool suite wherever you like on the Galaxy left column. 
 
 Start Galaxy.
+
+Using mPuma-Galaxy
+------------------
+
+The Galaxy page (URL) contains a workflow and history representing the mPuma pipeline, using a test dataset from the original publication. The pipeline can be run by importing both the history and the workflow and executing the workflow with the datasets from the history (We recommend doing this in your own Galaxy server). 
+
+Notes:
+
+* Use the NGS: QC and manipulation; FASTQ groomer to prepare FASTQ file for bowtie2
+
+Complete tool list at http://biordf:8983:
+
+* Bowtie2 (installed and working)
+
+
 
 Funding
 -------
