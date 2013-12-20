@@ -8,7 +8,7 @@ This is a new implementation of the mPuma pipeline (http://mpuma.sourceforge.net
 
 The original mPuma pipeline was implemented as a standalone terminal program. For this new implementation it has been decomposed into a suite of independent tools: the mPuma pipeline is executed as a Galaxy workflow, making it easier to run, debug, and generally more usefull, since some of the tools are new and also subpipelines can be easilly configured.
 
-The pipeline is already installed at http://biordf:8983 (See section Using mPuma-Galaxy bellow). You can also install the tool suite at your own Galaxy server (recommended).
+The pipeline is already installed at http://biordf.org:8983 (See section **Using mPuma-Galaxy** bellow). You can also install the tool suite at your own Galaxy server (recommended) following the instructions of the section **Installation** bellow.
 
 Installation
 ------------
@@ -29,7 +29,7 @@ Galaxy dependencies:
   * NGS: QC and manipulation; FASTQ groomer
   * Bowtie2
   
-* Galaxy tools already installed but need some configuration:
+* Galaxy tools included in a default Galaxy installation but need some configuration:
   * NGS RNA analysis; De novo assembly; trinity: uncomment in tool_conf.xml
 
 * Extra galaxy tools that need to be installed (most likely through the tool shed):
@@ -55,12 +55,6 @@ The Galaxy page (URL) contains a workflow and history representing the mPuma pip
 Notes:
 
 * Use the NGS: QC and manipulation; FASTQ groomer to prepare FASTQ file for bowtie2
-
-Complete tool list at http://biordf:8983:
-
-* Bowtie2 (installed and working)
-
-
 
 Funding
 -------
