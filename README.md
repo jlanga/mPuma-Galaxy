@@ -19,8 +19,7 @@ Server dependencies (You can check that they are met by runing the Galaxy functi
 
 * R 3.0 or higher (including packages biom, vegan, ...)
 * Rscript
-* Bioperl?
-* Samtools?
+* Perl modules: Bio::SeqIO
 
 Galaxy dependencies:
 
@@ -32,10 +31,16 @@ Galaxy dependencies:
 * Galaxy tools included in a default Galaxy installation but need some configuration:
   * NGS RNA analysis; De novo assembly; trinity: uncomment in tool_conf.xml
 
-* Extra galaxy tools that need to be installed (most likely through the tool shed):
-  * NGS: SAM tools http://wiki.galaxyproject.org/Admin/NGS%20Local%20Setup ???
-  * blastx old ???
-  * All the new tools included in this bundle (See Procedure bellow to install): Simpson, Shannon, create_ace_toc_SAM, ... 
+* Extra galaxy tools that need to be installed through the tool-shed:
+  * CD-HIT
+  * NGS: SAM tools (see http://wiki.galaxyproject.org/Admin/NGS%20Local%20Setup)
+  * BLASTX
+  * gsAssembler (Roche 454 tool suite)
+  
+* All the Galaxy tools included in this bundle (See Procedure bellow to install): 
+  * Simpson
+  * Shannon
+  * create_ace_toc_SAM 
   
 ### Procedure
 
