@@ -18,7 +18,7 @@ Installation
 Server dependencies (You can check that they are met by runing the Galaxy functional tests, e.g. `./run_functional_tests.sh -id Shannon`). Make sure they are available in the `$PATH` env variable:
 
 * R 3.0 or higher (including packages biom, vegan, ...)
-* Rscript
+* Rscript (/usr/bin/Rscript in ubuntu)
 * Perl modules: Bio::SeqIO
 
 Galaxy dependencies:
