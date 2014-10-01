@@ -64,4 +64,4 @@ Notes:
 Funding
 -------
 
-Mikel Egaña Aranguren is funded by the Marie Curie Cofund programme (FP7) of the European Union through the UPM (Spain).
+Mikel Egaña Aranguren is funded by the Marie Curie Cofund programme (FP7) of the European Union through the UPM (Spain) and the Genomic Resources Group (http://www.genomic-resources.eu/) of the University of Basque Country (UPV/EHU).
