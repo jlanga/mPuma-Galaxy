@@ -4,11 +4,14 @@
 
 # !!! Dangerous and fragile !!!
 
-# Stop Galaxy
-
 # Change Galaxy path in variable "galaxy" to fit your path
 
-galaxy="/home/mikel/galaxy-dist/"
+# galaxy="/home/mikel/galaxy-dist/"
+
+galaxy="/home/mikel/UPV-EHU/mPUMA-Galaxy/galaxy-dist/"
+
+# Stop Galaxy
+# $galaxy"./run.sh -stop--daemon"
 
 # Rest of the paths should be left as is
 
@@ -37,3 +40,4 @@ less galaxy-dist/tool_conf.xml >> $tmp_tool_conf
 mv $tmp_tool_conf $main_tool_conf
 
 # Start Galaxy
+# $galaxy"./run.sh --daemon"

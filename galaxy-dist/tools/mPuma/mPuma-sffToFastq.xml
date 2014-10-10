@@ -1,0 +1,28 @@
+<tool id="mPuma-sffToFastq" name="Convert SFF file to FASTQ" version="0.0.1">
+	<description>Convert SFF file to FASTQ</description>
+
+	<command interpreter="perl">sffToFastq.pl -i $input_sff > $output </command>	
+	<inputs>
+		<param name="input_sff" type="data" format="sff" label="SFF file"/>
+	</inputs>
+	<outputs>
+		<data name="output" format="fastq"/>
+	</outputs>
+
+	<help>
+
+**About**
+	
+  This script is part of the mPuma pipeline. It converts a SFF file to FASTQ.
+  
+**Usage**
+
+  Upload a SFF file file or redirect from another tool.
+
+**Contact**
+
+  Please send any request or comment to mikel.egana.aranguren@gmail.com.
+
+	</help>
+
+</tool>

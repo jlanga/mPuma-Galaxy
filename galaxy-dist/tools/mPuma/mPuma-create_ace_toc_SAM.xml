@@ -1,10 +1,10 @@
-<tool id="create_ace_toc_SAM" name="Create ace TOC from SAM file" version="0.0.1">
+<tool id="mPuma-create_ace_toc_SAM" name="Create ace TOC from SAM file" version="0.0.1">
 	<description>Creates a TOC that maps OTUs to reference genes. The input is a SAM file created by e.g. Bowtie2</description>
 
-	<command interpreter="perl">create_ace_toc_SAM.pl -s $sorted $input_sam > $output </command>
+	<command interpreter="perl">mPuma-create_ace_toc_SAM.pl -s $sorted $input_sam > $output </command>
 		
 	<inputs>
-		<param name="input_sam" type="data" label="SAM file"/>
+		<param name="input_sam" type="data" format="sam" label="SAM file"/>
 		<param name="sorted" type="select" label="Sorted output?">
 			<option value="1" selected="true">yes</option>
 			<option value="0">no</option>
@@ -17,11 +17,13 @@
 
 	<help>
 
-
+**About**
+	
+  This script is part of the mPuma pipeline. It creates a TOC that maps OTUs to reference genes.
+	
 **Usage**
 
   Upload a SAM file or redirect from another tool
-
 
 **Contact**
 
