@@ -16,8 +16,8 @@ galaxy="/home/mikel/UPV-EHU/mPUMA-Galaxy/galaxy-dist/"
 # Rest of the paths should be left as is
 
 galaxy_mpuma=$galaxy"tools/mPuma/"
-main_tool_conf=$galaxy"tool_conf.xml"
-tmp_tool_conf=$galaxy"tool_conf.xml.tmp"
+main_tool_conf=$galaxy"config/tool_conf.xml"
+tmp_tool_conf=$galaxy"config/tool_conf.xml.tmp"
 
 # Create mPuma directory if it doesn't exist 
 
@@ -34,7 +34,7 @@ cp galaxy-dist/test-data/* $galaxy"test-data"
 # (mPuma will appear at the end: it can also handle already existing mPuma sections, if there are at the end, if they are not it 
 # will delete everything till </toolbox>, and you will have to recover from tool_conf.xml.bk)
 
-cp $main_tool_conf $galaxy"tool_conf.xml.bk"
+cp $main_tool_conf $galaxy"config/tool_conf.xml.bk"
 cat $main_tool_conf | sed '/<section name="mPuma/,/<\/toolbox>/d' | grep -v "</toolbox>" > $tmp_tool_conf
 less galaxy-dist/tool_conf.xml >> $tmp_tool_conf
 mv $tmp_tool_conf $main_tool_conf

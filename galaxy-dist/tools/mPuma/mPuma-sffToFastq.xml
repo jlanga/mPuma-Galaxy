@@ -1,7 +1,7 @@
 <tool id="mPuma-sffToFastq" name="Convert SFF file to FASTQ" version="0.0.1">
 	<description>Convert SFF file to FASTQ</description>
 
-	<command interpreter="perl">sffToFastq.pl -i $input_sff > $output </command>	
+	<command interpreter="perl">mPuma-sffToFastq.pl -i $input_sff > $output </command>	
 	<inputs>
 		<param name="input_sff" type="data" format="sff" label="SFF file"/>
 	</inputs>
