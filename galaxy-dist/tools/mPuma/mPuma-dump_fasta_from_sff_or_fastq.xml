@@ -1,0 +1,46 @@
+<tool id="mPuma-dump_fasta_from_sff_or_fastq" name="Dump a FASTA file from a collection of SFF or FASTQ files" version="0.0.1">
+	<description>Dump a FASTA file from a collection of SFF or FASTQ files</description>
+
+	<command interpreter="perl">
+	  mPuma-dump_fasta_from_sff_or_fastq.pl 
+	  
+	  $input_format
+	  
+	  #for $i in $input_files
+	    ${i.input_file}
+	  #end for
+	  
+	  > $output 
+	</command>
+		
+        <inputs>
+	  <param name="input_format" type="select" label="Input format?">
+		<option value="sff" selected="true">SFF (.sff)</option>
+		<option value="fq">FASTQ (.fq)</option>
+		<option value="fq-gz">Compressed FASTQ (.fq.gz)</option>
+	  </param>
+	  <repeat name="input_files" title="Input SFF/FASTQ file">
+	    <param name="input_file" type="data" label="Input SFF/FASTQ file"/>
+	  </repeat>
+	</inputs>
+	<outputs>
+		<data name="output" format="fasta"/>>
+	</outputs>
+
+	<help>
+
+**About**
+	
+  This script is part of the mPuma pipeline. Dump a FASTA file from a collection of SFF or FASTQ files.
+	
+**Usage**
+
+  Upload a SFF or FASTQ file or redirect from another tool. Repeat as necessary.
+
+**Contact**
+
+  Please send any request or comment to mikel.egana.aranguren@gmail.com.
+
+	</help>
+
+</tool>
