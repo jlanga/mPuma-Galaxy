@@ -35,11 +35,11 @@
 
 **About**
     
-  This script is part of the mPuma pipeline. It creates a TOC that maps OTUs to reference genes.
+  This script is part of the mPuma pipeline. It runs seqclean to get rid of primers and other non-desirable sequences.
     
 **Usage**
 
-  Upload a SAM file or redirect from another tool
+  Use as inputs your FASTA of interest, another FASTA file for the adapter screening and you will get a cleaning report and a clean FASTA file
 
 **Contact**
 
