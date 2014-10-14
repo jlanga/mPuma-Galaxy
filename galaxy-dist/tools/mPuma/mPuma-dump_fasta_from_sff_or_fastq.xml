@@ -4,7 +4,9 @@
 	<command interpreter="perl">
 	  mPuma-dump_fasta_from_sff_or_fastq.pl 
 	  
-	  $input_format
+	  -i $input_format
+	  
+	  -w $width
 	  
 	  #for $i in $input_files
 	    ${i.input_file}
@@ -14,6 +16,7 @@
 	</command>
 		
         <inputs>
+	  <param name="width" type="text" size="30" value="60" label="Width"/>
 	  <param name="input_format" type="select" label="Input format?">
 		<option value="sff" selected="true">SFF (.sff)</option>
 		<option value="fq">FASTQ (.fq)</option>

@@ -2,9 +2,9 @@
 use strict;
 use Getopt::Long;
 use IPC::Open2;
-my ($output,$WIDTH);
+my ($input,$WIDTH);
 my @options = (
-	'o=s',	\$output,
+	'i=s',	\$input,
 	'w=s',	\$WIDTH
 );
 &GetOptions(@options);
@@ -16,20 +16,41 @@ $WIDTH = 60 unless defined $WIDTH;
 # redirect STDOUT to a file if it was specified
 # open(STDOUT,">$output") or die "Error opening $output for writting: $!" if defined $output;
 
-
-
 # figure out how to handle the file based on file extension
-foreach my $file (@ARGV){
-	if ($file =~ /\.sff$/){
-		 &dump_sff($file);
-	}elsif(($file =~ /\.fq$/)or($file =~ /\.fastq$/)){
-		 &dump_fq_compressed($file,0);
-	}elsif(($file =~ /\.fq.gz$/)or($file =~ /\.fastq.gz$/)){
-		 &dump_fq_compressed($file,1)
-	}else{
-		die "Error no method to handle $file";
-	}	
-}
+# foreach my $file (@ARGV){
+# 	if ($file =~ /\.sff$/){
+# 		 &dump_sff($file);
+# 	}elsif(($file =~ /\.fq$/)or($file =~ /\.fastq$/)){
+# 		 &dump_fq_compressed($file,0);
+# 	}elsif(($file =~ /\.fq.gz$/)or($file =~ /\.fastq.gz$/)){
+# 		 &dump_fq_compressed($file,1)
+# 	}else{
+# 		die "Error no method to handle $file";
+# 	}	
+# }
+
+
+# Very hacky: user specifies format, so all the files must have same format!
+
+if ($input eq "sff"){
+  foreach my $file (@ARGV){
+    &dump_sff($file);
+  }
+}elsif ($input eq "fq"){
+  foreach my $file (@ARGV){
+    &dump_fq_compressed($file,0);
+  }
+}elsif ($input eq "fq-gz"){
+  foreach my $file (@ARGV){
+    &dump_fq_compressed($file,1);
+  }
+}else{
+  die "Error no format especified";
+}	
+
+
+# Hau da dana
+
 # c'est ca
 exit 0;
 
