@@ -1,33 +1,29 @@
-<tool id="mPuma-seqclean" name="Filter a FASTA file by means of Seqclean (quality, length, vector, mitochondrial and ribosomal databases, dust, poly-A tails)" version="0.0.1">
-    <description></description>
+<tool id="mPuma-seqclean" name="Filter a FASTA file with Seqclean" version="0.0.1">
+    <description>
+        Filter a FASTA file by means of Seqclean (quality, length, vector, mitochondrial and ribosomal databases, dust, poly-A tails)
+    </description>
 
-    <command interpreter="bash"> seqclean $input_fasta -c $num_cpu -n 1 -v $primers_fasta -o $output_fasta -r $output_clean    </command>
+    <command interpreter="bash">
+
+        seqclean $input_fasta -c $num_cpu -n 1 -v $primers_fasta -o $output_fasta -r $output_clean
+
+    </command>
         
     <inputs>
         
-        <param name="input_fasta" type="data" format="sam" label="SAM file"/>
+        <param name="input_fasta"   type="data" format="fasta"      label="FASTA file"/>
         
-        <param name="num_cpu"     type="select" label="Number of CPU?">
-
-            <option value="1"  selected="true"> 1</option>
-            
-            <option value="6"  selected="true"> 2</option>
-            
-            <option value="12" selected="true"> 8</option>
-            
-            <option value="24" selected="true">16</option>
+        <param name="num_cpu"       type="text" size="30" value="1" label="CPUs"/>
         
-        </param>
-        
-        <param name="primers_fasta" type="data" format="fasta" label="Contaminant FASTA file"/>
+        <param name="primers_fasta" type="data" format="fasta"      label="Contaminant FASTA file"/>
 
     </inputs>
 
     <outputs>
     
-        <data format="fasta" name="output_fasta">
+        <data format="fasta" name="output_fasta"/>
     
-        <data format="text"  name="output_clean" />
+        <data format="text"  name="output_clean"/>
     
     </outputs>
 
