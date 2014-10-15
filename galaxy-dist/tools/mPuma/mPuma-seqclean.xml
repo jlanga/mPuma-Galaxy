@@ -3,9 +3,9 @@
         Filter a FASTA file by means of Seqclean (quality, length, vector, mitochondrial and ribosomal databases, dust, poly-A tails)
     </description>
 
-    <command interpreter="bash">
+    <command>
 
-        seqclean $input_fasta -c $num_cpu -n 1 -v $primers_fasta -o $output_fasta -r $output_clean
+        seqclean $input_fasta -c $num_cpu -n 1 -v $primers_fasta -o $output_fasta -r $output_clean 2&gt; /dev/null
 
     </command>
         
