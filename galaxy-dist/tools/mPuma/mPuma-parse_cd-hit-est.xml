@@ -1,0 +1,39 @@
+<tool id="mPuma-parse-cd-hit-est" name="Parse cd-hit-est clusters" version="0.01">
+
+    <desription>
+        
+        Parses CD-HIT-ESTs cluster report.
+
+    </desription>
+
+    <command interpreter="perl">parse_cd-hit-est.pl -c $clusterFile -o $clusterReport</command>
+
+    <inputs>
+
+        <param name="variable_input" type="data" format="text" label="clusterFile"/> <!-- Standard -->
+
+    </inputs>
+
+    <outputs>
+
+        <data format="text" name="clusterReport"/>
+
+    </outputs>
+
+    <help>
+
+**About**
+
+    This script is part of the mPuma pipeline. This perl script parses the cluster file generated with CD-HIT-EST for further downstream analysis.
+
+**Usage**
+    
+    Upload a cluster file from CD-HIT-EST or take the one from the CD-HIT-EST tool.
+
+**Contact**
+
+    Please send any request or comment to mikel.egana.aranguren@gmail.com
+
+    </help>
+
+</tool>
