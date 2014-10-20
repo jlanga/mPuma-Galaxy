@@ -1,0 +1,43 @@
+<tool id="mPuma-fasta_batcher" name="Perform fasta_batcher/watered-blast" version="0.01">
+
+    <desription>Performs a Watered BLAST over a fasta file (clustered reads)</desription>
+
+    <command interpreter="perl">
+    
+        mPuma-fasta_batcher.pl -i $inFasta -ni 'i' -o $outFasta -c $CPU -t $CPU -u 1 -e 'perl mPuma-watered_blast.pl -d $dbFasta' -p blastn -h 0 -v 1
+    
+    </command>
+    
+    <inputs>
+
+        <param name="inFasta"  type="data" format="fasta" label="FASTA file">
+
+        <param name="CPU"      type="text" size="10" value="1" label="Number of CPUs to use">
+
+        <param name="database" type="data" format="fasta" label="FASTA database for CPN60">
+
+    </inputs>
+
+    <outputs>
+
+        <data format="fasta" name="outFasta">
+
+    </outputs>
+
+    <help>
+
+**About**
+
+    This script is part of the mPuma pipeline. This script filters clustered sequences by searching a database.
+
+**Usage**
+    
+    Introduce a FASTA file to filter, a number of CPUs and a FASTA database to check against.
+
+**Contact**
+
+    Please send any request or comment to mikel.egana.aranguren@gmail.com
+
+    </help>
+
+</tool>
