@@ -1,0 +1,1419 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "SFF to FASTQ; Trinity; seqclean; CD-HIT-EST; Bowtie2", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 10
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "1": {
+            "annotation": "", 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 130
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 250
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "3": {
+            "annotation": "", 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 370
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "4": {
+            "annotation": "", 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 490
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "5": {
+            "annotation": "", 
+            "id": 5, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 610
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "6": {
+            "annotation": "", 
+            "id": 6, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 730
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "7": {
+            "annotation": "", 
+            "id": 7, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 850
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "8": {
+            "annotation": "", 
+            "id": 8, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 970
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "9": {
+            "annotation": "", 
+            "id": 9, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 1090
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "10": {
+            "annotation": "", 
+            "id": 10, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 1210
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "11": {
+            "annotation": "", 
+            "id": 11, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 1330
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "12": {
+            "annotation": "", 
+            "id": 12, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 1450
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "13": {
+            "annotation": "", 
+            "id": 13, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 1570
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "14": {
+            "annotation": "", 
+            "id": 14, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 1690
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "15": {
+            "annotation": "", 
+            "id": 15, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 1810
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "16": {
+            "annotation": "", 
+            "id": 16, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "Input Dataset"
+                }
+            ], 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 10, 
+                "top": 1930
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"Input Dataset\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "user_outputs": []
+        }, 
+        "17": {
+            "annotation": "", 
+            "id": 17, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 0, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "18": {
+            "annotation": "", 
+            "id": 18, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 1, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 130
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "19": {
+            "annotation": "", 
+            "id": 19, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 2, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 250
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "20": {
+            "annotation": "", 
+            "id": 20, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 3, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 370
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "21": {
+            "annotation": "", 
+            "id": 21, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 4, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 490
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "22": {
+            "annotation": "", 
+            "id": 22, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 5, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 610
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "23": {
+            "annotation": "", 
+            "id": 23, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 6, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 730
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "24": {
+            "annotation": "", 
+            "id": 24, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 7, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 850
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "25": {
+            "annotation": "", 
+            "id": 25, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 8, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 970
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "26": {
+            "annotation": "", 
+            "id": 26, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 9, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 1090
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "27": {
+            "annotation": "", 
+            "id": 27, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 10, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 1210
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "28": {
+            "annotation": "", 
+            "id": 28, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 11, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 1330
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "29": {
+            "annotation": "", 
+            "id": 29, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 12, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 1450
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "30": {
+            "annotation": "", 
+            "id": 30, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 13, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 1570
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "31": {
+            "annotation": "", 
+            "id": 31, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 14, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 1690
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "32": {
+            "annotation": "", 
+            "id": 32, 
+            "input_connections": {
+                "input_sff": {
+                    "id": 15, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Convert SFF file to FASTQ", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fastq"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 1810
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-sffToFastq", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_sff\": \"null\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "33": {
+            "annotation": "", 
+            "id": 33, 
+            "input_connections": {
+                "input_files_0|input_file": {
+                    "id": 0, 
+                    "output_name": "output"
+                }, 
+                "input_files_10|input_file": {
+                    "id": 10, 
+                    "output_name": "output"
+                }, 
+                "input_files_11|input_file": {
+                    "id": 11, 
+                    "output_name": "output"
+                }, 
+                "input_files_12|input_file": {
+                    "id": 12, 
+                    "output_name": "output"
+                }, 
+                "input_files_13|input_file": {
+                    "id": 13, 
+                    "output_name": "output"
+                }, 
+                "input_files_14|input_file": {
+                    "id": 14, 
+                    "output_name": "output"
+                }, 
+                "input_files_15|input_file": {
+                    "id": 15, 
+                    "output_name": "output"
+                }, 
+                "input_files_1|input_file": {
+                    "id": 1, 
+                    "output_name": "output"
+                }, 
+                "input_files_2|input_file": {
+                    "id": 2, 
+                    "output_name": "output"
+                }, 
+                "input_files_3|input_file": {
+                    "id": 3, 
+                    "output_name": "output"
+                }, 
+                "input_files_4|input_file": {
+                    "id": 4, 
+                    "output_name": "output"
+                }, 
+                "input_files_5|input_file": {
+                    "id": 5, 
+                    "output_name": "output"
+                }, 
+                "input_files_6|input_file": {
+                    "id": 6, 
+                    "output_name": "output"
+                }, 
+                "input_files_7|input_file": {
+                    "id": 7, 
+                    "output_name": "output"
+                }, 
+                "input_files_8|input_file": {
+                    "id": 8, 
+                    "output_name": "output"
+                }, 
+                "input_files_9|input_file": {
+                    "id": 9, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Dump a FASTA file from a collection of SFF or FASTQ files", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "fasta"
+                }
+            ], 
+            "position": {
+                "left": 230, 
+                "top": 1930
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-dump_fasta_from_sff_or_fastq", 
+            "tool_state": "{\"__page__\": 0, \"input_format\": \"\\\"sff\\\"\", \"__rerun_remap_job_id__\": null, \"width\": \"\\\"60\\\"\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"input_files\": \"[{\\\"__index__\\\": 0, \\\"input_file\\\": null}, {\\\"__index__\\\": 1, \\\"input_file\\\": null}, {\\\"__index__\\\": 2, \\\"input_file\\\": null}, {\\\"__index__\\\": 3, \\\"input_file\\\": null}, {\\\"__index__\\\": 4, \\\"input_file\\\": null}, {\\\"__index__\\\": 5, \\\"input_file\\\": null}, {\\\"__index__\\\": 6, \\\"input_file\\\": null}, {\\\"__index__\\\": 7, \\\"input_file\\\": null}, {\\\"__index__\\\": 8, \\\"input_file\\\": null}, {\\\"__index__\\\": 9, \\\"input_file\\\": null}, {\\\"__index__\\\": 10, \\\"input_file\\\": null}, {\\\"__index__\\\": 11, \\\"input_file\\\": null}, {\\\"__index__\\\": 12, \\\"input_file\\\": null}, {\\\"__index__\\\": 13, \\\"input_file\\\": null}, {\\\"__index__\\\": 14, \\\"input_file\\\": null}, {\\\"__index__\\\": 15, \\\"input_file\\\": null}]\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "34": {
+            "annotation": "", 
+            "id": 34, 
+            "input_connections": {
+                "input1": {
+                    "id": 17, 
+                    "output_name": "output"
+                }, 
+                "queries_0|input2": {
+                    "id": 18, 
+                    "output_name": "output"
+                }, 
+                "queries_10|input2": {
+                    "id": 28, 
+                    "output_name": "output"
+                }, 
+                "queries_11|input2": {
+                    "id": 29, 
+                    "output_name": "output"
+                }, 
+                "queries_12|input2": {
+                    "id": 30, 
+                    "output_name": "output"
+                }, 
+                "queries_13|input2": {
+                    "id": 31, 
+                    "output_name": "output"
+                }, 
+                "queries_14|input2": {
+                    "id": 32, 
+                    "output_name": "output"
+                }, 
+                "queries_1|input2": {
+                    "id": 19, 
+                    "output_name": "output"
+                }, 
+                "queries_2|input2": {
+                    "id": 20, 
+                    "output_name": "output"
+                }, 
+                "queries_3|input2": {
+                    "id": 21, 
+                    "output_name": "output"
+                }, 
+                "queries_4|input2": {
+                    "id": 22, 
+                    "output_name": "output"
+                }, 
+                "queries_5|input2": {
+                    "id": 23, 
+                    "output_name": "output"
+                }, 
+                "queries_6|input2": {
+                    "id": 24, 
+                    "output_name": "output"
+                }, 
+                "queries_7|input2": {
+                    "id": 25, 
+                    "output_name": "output"
+                }, 
+                "queries_8|input2": {
+                    "id": 26, 
+                    "output_name": "output"
+                }, 
+                "queries_9|input2": {
+                    "id": 27, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Concatenate datasets", 
+            "outputs": [
+                {
+                    "name": "out_file1", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 450, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "cat1", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"input1\": \"null\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"queries\": \"[{\\\"input2\\\": null, \\\"__index__\\\": 0}, {\\\"input2\\\": null, \\\"__index__\\\": 1}, {\\\"input2\\\": null, \\\"__index__\\\": 2}, {\\\"input2\\\": null, \\\"__index__\\\": 3}, {\\\"input2\\\": null, \\\"__index__\\\": 4}, {\\\"input2\\\": null, \\\"__index__\\\": 5}, {\\\"input2\\\": null, \\\"__index__\\\": 6}, {\\\"input2\\\": null, \\\"__index__\\\": 7}, {\\\"input2\\\": null, \\\"__index__\\\": 8}, {\\\"input2\\\": null, \\\"__index__\\\": 9}, {\\\"input2\\\": null, \\\"__index__\\\": 10}, {\\\"input2\\\": null, \\\"__index__\\\": 11}, {\\\"input2\\\": null, \\\"__index__\\\": 12}, {\\\"input2\\\": null, \\\"__index__\\\": 13}, {\\\"input2\\\": null, \\\"__index__\\\": 14}]\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "35": {
+            "annotation": "", 
+            "id": 35, 
+            "input_connections": {
+                "inputs|input": {
+                    "id": 34, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Trinity", 
+            "outputs": [
+                {
+                    "name": "trinity_log", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "assembled_transcripts", 
+                    "type": "fasta"
+                }
+            ], 
+            "position": {
+                "left": 670, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bhaas/trinityrnaseq/trinityrnaseq/0.0.1", 
+            "tool_state": "{\"__page__\": 0, \"additional_params\": \"{\\\"use_additional\\\": \\\"no\\\", \\\"__current_case__\\\": 0}\", \"inputs\": \"{\\\"paired_or_single\\\": \\\"single\\\", \\\"input\\\": null, \\\"path_reinforcement_distance\\\": \\\"40\\\", \\\"__current_case__\\\": 1, \\\"library_type\\\": \\\"None\\\"}\", \"__rerun_remap_job_id__\": null, \"JM\": \"\\\"10G\\\"\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"CPU\": \"\\\"16\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "36": {
+            "annotation": "", 
+            "id": 36, 
+            "input_connections": {
+                "input_file": {
+                    "id": 34, 
+                    "output_name": "out_file1"
+                }
+            }, 
+            "inputs": [], 
+            "name": "FASTQ Groomer", 
+            "outputs": [
+                {
+                    "name": "output_file", 
+                    "type": "fastqsanger"
+                }
+            ], 
+            "position": {
+                "left": 670, 
+                "top": 130
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastq_groomer/fastq_groomer/1.0.4", 
+            "tool_state": "{\"__page__\": 0, \"input_file\": \"null\", \"input_type\": \"\\\"sanger\\\"\", \"__rerun_remap_job_id__\": null, \"options_type\": \"{\\\"output_type\\\": \\\"sanger\\\", \\\"force_quality_encoding\\\": \\\"ascii\\\", \\\"options_type_selector\\\": \\\"advanced\\\", \\\"__current_case__\\\": 1, \\\"summarize_input\\\": \\\"summarize_input\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "37": {
+            "annotation": "", 
+            "id": 37, 
+            "input_connections": {
+                "input_fasta": {
+                    "id": 35, 
+                    "output_name": "assembled_transcripts"
+                }, 
+                "primers_fasta": {
+                    "id": 16, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Filter a FASTA file with Seqclean", 
+            "outputs": [
+                {
+                    "name": "output_fasta", 
+                    "type": "fasta"
+                }, 
+                {
+                    "name": "output_clean", 
+                    "type": "text"
+                }
+            ], 
+            "position": {
+                "left": 890, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "mPuma-seqclean", 
+            "tool_state": "{\"__page__\": 0, \"input_fasta\": \"null\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"primers_fasta\": \"null\", \"num_cpu\": \"\\\"16\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "38": {
+            "annotation": "", 
+            "id": 38, 
+            "input_connections": {
+                "fasta_in": {
+                    "id": 37, 
+                    "output_name": "output_fasta"
+                }
+            }, 
+            "inputs": [], 
+            "name": "CD-HIT-EST", 
+            "outputs": [
+                {
+                    "name": "clusters_out", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "fasta_out", 
+                    "type": "fasta"
+                }
+            ], 
+            "position": {
+                "left": 1110, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/jjohnson/cdhit/cd_hit_est/1.2", 
+            "tool_state": "{\"__page__\": 0, \"similarity\": \"\\\"1.0\\\"\", \"cluster_type\": \"\\\"False\\\"\", \"__rerun_remap_job_id__\": null, \"fasta_in\": \"null\", \"print_alignment\": \"\\\"True\\\"\", \"wordsize\": \"\\\"10\\\"\", \"strand\": \"\\\"True\\\"\", \"runtime\": \"{\\\"tuning\\\": \\\"default\\\", \\\"__current_case__\\\": 0}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"advanced\": \"{\\\"__current_case__\\\": 0, \\\"settings\\\": \\\"no\\\"}\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "39": {
+            "annotation": "", 
+            "id": 39, 
+            "input_connections": {
+                "library|input_1": {
+                    "id": 36, 
+                    "output_name": "output_file"
+                }, 
+                "reference_genome|own_file": {
+                    "id": 38, 
+                    "output_name": "fasta_out"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Bowtie2", 
+            "outputs": [
+                {
+                    "name": "output_unaligned_reads_l", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_unaligned_reads_r", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1330, 
+                "top": 10
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.2", 
+            "tool_state": "{\"__page__\": 0, \"read_group\": \"{\\\"selection\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"__rerun_remap_job_id__\": null, \"unaligned_file\": \"\\\"False\\\"\", \"library\": \"{\\\"type\\\": \\\"single\\\", \\\"__current_case__\\\": 0, \\\"input_1\\\": null}\", \"reference_genome\": \"{\\\"source\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"own_file\\\": null}\", \"params\": \"{\\\"upto\\\": \\\"0\\\", \\\"full\\\": \\\"yes\\\", \\\"nofw_norc\\\": \\\"\\\", \\\"align_type\\\": \\\"--local\\\", \\\"skip\\\": \\\"0\\\", \\\"__current_case__\\\": 0, \\\"time\\\": \\\"\\\", \\\"performance\\\": \\\"--sensitive\\\", \\\"gbar\\\": \\\"4\\\", \\\"trim5\\\": \\\"0\\\", \\\"trim3\\\": \\\"0\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "40": {
+            "annotation": "", 
+            "id": 40, 
+            "input_connections": {
+                "library|input_1": {
+                    "id": 36, 
+                    "output_name": "output_file"
+                }, 
+                "reference_genome|own_file": {
+                    "id": 38, 
+                    "output_name": "fasta_out"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Bowtie2", 
+            "outputs": [
+                {
+                    "name": "output_unaligned_reads_l", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_unaligned_reads_r", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1330, 
+                "top": 130
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.2", 
+            "tool_state": "{\"__page__\": 0, \"read_group\": \"{\\\"selection\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"__rerun_remap_job_id__\": null, \"unaligned_file\": \"\\\"False\\\"\", \"library\": \"{\\\"type\\\": \\\"single\\\", \\\"__current_case__\\\": 0, \\\"input_1\\\": null}\", \"reference_genome\": \"{\\\"source\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"own_file\\\": null}\", \"params\": \"{\\\"upto\\\": \\\"0\\\", \\\"full\\\": \\\"yes\\\", \\\"nofw_norc\\\": \\\"\\\", \\\"align_type\\\": \\\"--local\\\", \\\"skip\\\": \\\"0\\\", \\\"__current_case__\\\": 0, \\\"time\\\": \\\"\\\", \\\"performance\\\": \\\"--sensitive\\\", \\\"gbar\\\": \\\"4\\\", \\\"trim5\\\": \\\"0\\\", \\\"trim3\\\": \\\"0\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "41": {
+            "annotation": "", 
+            "id": 41, 
+            "input_connections": {
+                "library|input_1": {
+                    "id": 36, 
+                    "output_name": "output_file"
+                }, 
+                "reference_genome|own_file": {
+                    "id": 38, 
+                    "output_name": "fasta_out"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Bowtie2", 
+            "outputs": [
+                {
+                    "name": "output_unaligned_reads_l", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_unaligned_reads_r", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1330, 
+                "top": 250
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.2", 
+            "tool_state": "{\"__page__\": 0, \"read_group\": \"{\\\"selection\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"__rerun_remap_job_id__\": null, \"unaligned_file\": \"\\\"False\\\"\", \"library\": \"{\\\"type\\\": \\\"single\\\", \\\"__current_case__\\\": 0, \\\"input_1\\\": null}\", \"reference_genome\": \"{\\\"source\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"own_file\\\": null}\", \"params\": \"{\\\"upto\\\": \\\"0\\\", \\\"full\\\": \\\"yes\\\", \\\"nofw_norc\\\": \\\"\\\", \\\"align_type\\\": \\\"--local\\\", \\\"skip\\\": \\\"0\\\", \\\"__current_case__\\\": 0, \\\"time\\\": \\\"\\\", \\\"performance\\\": \\\"--sensitive\\\", \\\"gbar\\\": \\\"4\\\", \\\"trim5\\\": \\\"0\\\", \\\"trim3\\\": \\\"0\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "42": {
+            "annotation": "", 
+            "id": 42, 
+            "input_connections": {
+                "library|input_1": {
+                    "id": 36, 
+                    "output_name": "output_file"
+                }, 
+                "reference_genome|own_file": {
+                    "id": 38, 
+                    "output_name": "fasta_out"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Bowtie2", 
+            "outputs": [
+                {
+                    "name": "output_unaligned_reads_l", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_unaligned_reads_r", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1330, 
+                "top": 370
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.2", 
+            "tool_state": "{\"__page__\": 0, \"read_group\": \"{\\\"selection\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"__rerun_remap_job_id__\": null, \"unaligned_file\": \"\\\"False\\\"\", \"library\": \"{\\\"type\\\": \\\"single\\\", \\\"__current_case__\\\": 0, \\\"input_1\\\": null}\", \"reference_genome\": \"{\\\"source\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"own_file\\\": null}\", \"params\": \"{\\\"upto\\\": \\\"0\\\", \\\"full\\\": \\\"yes\\\", \\\"nofw_norc\\\": \\\"\\\", \\\"align_type\\\": \\\"--local\\\", \\\"skip\\\": \\\"0\\\", \\\"__current_case__\\\": 0, \\\"time\\\": \\\"\\\", \\\"performance\\\": \\\"--sensitive\\\", \\\"gbar\\\": \\\"4\\\", \\\"trim5\\\": \\\"0\\\", \\\"trim3\\\": \\\"0\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "43": {
+            "annotation": "", 
+            "id": 43, 
+            "input_connections": {
+                "library|input_1": {
+                    "id": 36, 
+                    "output_name": "output_file"
+                }, 
+                "reference_genome|own_file": {
+                    "id": 38, 
+                    "output_name": "fasta_out"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Bowtie2", 
+            "outputs": [
+                {
+                    "name": "output_unaligned_reads_l", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_unaligned_reads_r", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1330, 
+                "top": 490
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.2", 
+            "tool_state": "{\"__page__\": 0, \"read_group\": \"{\\\"selection\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"__rerun_remap_job_id__\": null, \"unaligned_file\": \"\\\"False\\\"\", \"library\": \"{\\\"type\\\": \\\"single\\\", \\\"__current_case__\\\": 0, \\\"input_1\\\": null}\", \"reference_genome\": \"{\\\"source\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"own_file\\\": null}\", \"params\": \"{\\\"upto\\\": \\\"0\\\", \\\"full\\\": \\\"yes\\\", \\\"nofw_norc\\\": \\\"\\\", \\\"align_type\\\": \\\"--local\\\", \\\"skip\\\": \\\"0\\\", \\\"__current_case__\\\": 0, \\\"time\\\": \\\"\\\", \\\"performance\\\": \\\"--sensitive\\\", \\\"gbar\\\": \\\"4\\\", \\\"trim5\\\": \\\"0\\\", \\\"trim3\\\": \\\"0\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }, 
+        "44": {
+            "annotation": "", 
+            "id": 44, 
+            "input_connections": {
+                "library|input_1": {
+                    "id": 36, 
+                    "output_name": "output_file"
+                }, 
+                "reference_genome|own_file": {
+                    "id": 38, 
+                    "output_name": "fasta_out"
+                }
+            }, 
+            "inputs": [], 
+            "name": "Bowtie2", 
+            "outputs": [
+                {
+                    "name": "output_unaligned_reads_l", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output_unaligned_reads_r", 
+                    "type": "fastqsanger"
+                }, 
+                {
+                    "name": "output", 
+                    "type": "bam"
+                }
+            ], 
+            "position": {
+                "left": 1330, 
+                "top": 610
+            }, 
+            "post_job_actions": {}, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/0.2", 
+            "tool_state": "{\"__page__\": 0, \"read_group\": \"{\\\"selection\\\": \\\"no\\\", \\\"__current_case__\\\": 1}\", \"__rerun_remap_job_id__\": null, \"unaligned_file\": \"\\\"False\\\"\", \"library\": \"{\\\"type\\\": \\\"single\\\", \\\"__current_case__\\\": 0, \\\"input_1\\\": null}\", \"reference_genome\": \"{\\\"source\\\": \\\"history\\\", \\\"__current_case__\\\": 1, \\\"own_file\\\": null}\", \"params\": \"{\\\"upto\\\": \\\"0\\\", \\\"full\\\": \\\"yes\\\", \\\"nofw_norc\\\": \\\"\\\", \\\"align_type\\\": \\\"--local\\\", \\\"skip\\\": \\\"0\\\", \\\"__current_case__\\\": 0, \\\"time\\\": \\\"\\\", \\\"performance\\\": \\\"--sensitive\\\", \\\"gbar\\\": \\\"4\\\", \\\"trim5\\\": \\\"0\\\", \\\"trim3\\\": \\\"0\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": null, 
+            "type": "tool", 
+            "user_outputs": []
+        }
+    }
+}

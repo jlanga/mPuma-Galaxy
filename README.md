@@ -8,43 +8,18 @@ This is a new implementation of the mPuma pipeline (http://mpuma.sourceforge.net
 
 The original mPuma pipeline was implemented as a standalone terminal program. For this new implementation it has been decomposed into a suite of independent tools: the mPuma pipeline is executed as a Galaxy workflow, making it easier to run, debug, and generally more usefull, since some of the tools are new and also subpipelines can be easilly configured.
 
-The pipeline is already installed at http://biordf.org:8983 (See section **Using mPuma-Galaxy** bellow). You can also install the tool suite at your own Galaxy server (recommended) following the instructions of the section **Installation** bellow.
+The pipeline is already installed at PURL (See section **Using mPuma-Galaxy** bellow). You can also install the tool suite at your own Galaxy server (recommended) following the instructions of the section **Installation** bellow.
 
 Installation
 ------------
 
 ### Requirements
 
-Server dependencies (You can check that they are met by runing the Galaxy functional tests, e.g. `./run_functional_tests.sh -id Shannon`). Make sure they are available in the `$PATH` env variable:
-
-* R 3.0 or higher (including packages biom, vegan, ...)
-* Rscript (/usr/bin/Rscript in ubuntu)
-* Perl modules: Bio::SeqIO
-
-Galaxy dependencies:
-
-* Galaxy tools included in a default Galaxy installation (No need to install but added here for completeness):
-  * Convert formats; SFF converter
-  * NGS: QC and manipulation; FASTQ groomer
-  * Bowtie2
-  
-* Galaxy tools included in a default Galaxy installation but need some configuration:
-  * NGS RNA analysis; De novo assembly; trinity: uncomment in tool_conf.xml
-
-* Extra galaxy tools that need to be installed through the tool-shed:
-  * CD-HIT
-  * NGS: SAM tools (see http://wiki.galaxyproject.org/Admin/NGS%20Local%20Setup)
-  * BLASTX
-  * gsAssembler (Roche 454 tool suite)
-  
-* All the Galaxy tools included in this bundle (See Procedure bellow to install): 
-  * Simpson
-  * Shannon
-  * create_ace_toc_SAM 
+See [wiki](https://github.com/mikel-egana-aranguren/mPuma-Galaxy/wiki).
   
 ### Procedure
 
-In order to install the tools of this bundle, there is no toolshed version yet for automated installation. Stop Galaxy and either:
+In order to install the tools of this suite, it is recommended to use the toolshed automated installation. You can also do it manually; stop Galaxy and either:
 
 * Unpack and execute `deploy-mPuma-Galaxy.sh` at your own risk. The script will copy the necessary files and edit `tool-conf.xml`. You need to edit the `galaxy` variable and add the path to your galaxy distribution.
 
@@ -55,11 +30,7 @@ Start Galaxy.
 Using mPuma-Galaxy
 ------------------
 
-The Galaxy page (URL) contains a workflow and history representing the mPuma pipeline, using a test dataset from the original publication. The pipeline can be run by importing both the history and the workflow and executing the workflow with the datasets from the history (We recommend doing this in your own Galaxy server). 
-
-Notes:
-
-* Use the NGS: QC and manipulation; FASTQ groomer to prepare FASTQ file for bowtie2
+The Galaxy page (PURL) contains a workflow and history representing the mPuma pipeline, using a test dataset from the original publication. The pipeline can be run by importing both the history and the workflow and executing the workflow with the datasets from the history (We recommend doing this in your own Galaxy server). 
 
 Funding
 -------
