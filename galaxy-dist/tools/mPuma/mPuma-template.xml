@@ -1,0 +1,48 @@
+<tool id="mPuma-scriptname" name="Tool name" version="0.01">
+<!-- <tool id="mPuma-create_ace_toc_SAM" name="Create ace TOC from SAM file" version="0.0.1"> -->
+    <desription> </desription>
+    <!-- <description>Creates a TOC that maps OTUs to reference genes. The input is a SAM file created by e.g. Bowtie2</description> -->
+
+    <command interpreter="python"> command </command>
+    <!-- <command interpreter="perl">mPuma-create_ace_toc_SAM.pl -s $sorted $input_sam > $output </command> -->
+    <inputs>
+
+        <param name="variable_input" type="data" format="sam" label="label"/> <!-- Standard -->
+        <!-- <param name="input_sam" type="data" format="sam" label="SAM file"/> -->
+
+        <param name="select_value" type="select" label="label">                <!-- Select  -->
+        <!-- <param name="sorted" type="select" label="Sorted output?"> -->
+            <!-- <option value="1" selected="true">yes</option> -->
+            <!-- <option value="0">no</option> -->
+
+        <param name="input_text" type="text" size="10" value="0" label="label"/>
+        <!-- <param name="num_cpu"       type="text" size="30" value="1" label="CPUs"/> -->
+
+
+    </inputs>
+
+    <outputs>
+
+        <data format="fasta" name="output_fasta"/>
+    
+        <data format="text"  name="output_clean"/>
+
+    </outputs>
+
+    <help>
+
+**About**
+
+    This script is part of the mPuma pipeline. DESCRIPTION HERE
+
+**Usage**
+    
+    EXPLAIN INPUTS
+
+**Contact**
+
+    Please send any request or comment to mikel.egana.aranguren@gmail.com
+
+    </help>
+
+</tool>
