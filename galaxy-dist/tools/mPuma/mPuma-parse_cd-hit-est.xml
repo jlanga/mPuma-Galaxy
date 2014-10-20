@@ -6,11 +6,11 @@
 
     </desription>
 
-    <command interpreter="perl">parse_cd-hit-est.pl -c $clusterFile -o $clusterReport</command>
+    <command interpreter="perl">mPuma-parse_cd-hit-est.pl -c $clusterFile -o $clusterReport</command>
 
     <inputs>
 
-        <param name="variable_input" type="data" format="text" label="clusterFile"/> <!-- Standard -->
+        <param name="clusterFile" type="data" format="text" label="CD-HIT-EST cluster File"/> <!-- Standard -->
 
     </inputs>
 
