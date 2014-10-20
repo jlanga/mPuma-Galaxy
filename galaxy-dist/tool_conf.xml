@@ -2,8 +2,8 @@
     <tool file="mPuma/mPuma-create_ace_toc_SAM.xml"/>
     <tool file="mPuma/mPuma-sffToFastq.xml"/>
     <tool file="mPuma/mPuma-dump_fasta_from_sff_or_fastq.xml"/>
-    <tool file="mPuma/mPuma-seqclean.xml" >
-    <tool file="mPuma/mPuma-parse_cd-hit-est.xml">
-    <tool file="mPuma/mPuma-fasta_batcher.xml">
+    <tool file="mPuma/mPuma-seqclean.xml"/>
+    <tool file="mPuma/mPuma-parse_cd-hit-est.xml"/>
+    <tool file="mPuma/mPuma-fasta_batcher.xml"/>
   </section>
 </toolbox>
