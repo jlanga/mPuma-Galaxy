@@ -2,7 +2,7 @@
 
     <desription>Splits sequences with c2e</desription>
 
-    <command interpreter="perl">c2e.pl -i $inputFasta -o $outputFasta -l $length</command>
+    <command interpreter="perl">mPuma-c2e.pl -i $inputFasta -o $outputFasta -l $length</command>
     
     <inputs>
 
