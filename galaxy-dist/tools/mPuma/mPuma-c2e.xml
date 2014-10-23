@@ -1,0 +1,39 @@
+<tool id="mPuma-c2e" name="Split sequences with c2e" version="0.01">
+
+    <desription>Splits sequences with c2e</desription>
+
+    <command interpreter="perl">c2e.pl -i $inputFasta -o $outputFasta -l $length</command>
+    
+    <inputs>
+
+        <param name="inputFasta" type="data" format="fasta" label="Input FASTA file"/> <!-- Standard -->
+
+        <param name="length" type="text" size="10" value="150" label="Length to split sequences"/>
+
+    </inputs>
+
+    <outputs>
+
+        <data format="fasta" name="outputFasta"/>
+
+    </outputs>
+
+    <help>
+
+**About**
+
+    This script is part of the mPuma pipeline. `c2e` splits each sequence by length `L` returning, for each sequence in FASTA format:
+        The first `L` nucleotides of the input sequence.
+        The first `L` nucleotides from the reverse complement of the input sequence.
+
+**Usage**
+    
+    The inputs are a FASTA nucleotide file (the resulting fasta from `mPuma-seqclean`) and a positive integer, and will result into a FASTA nucleotide file, with the double of registries as in the input.
+
+**Contact**
+
+    Please send any request or comment to mikel.egana.aranguren@gmail.com
+
+    </help>
+
+</tool>
