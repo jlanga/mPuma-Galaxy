@@ -4,7 +4,7 @@
 
     <command interpreter="perl">
     
-        mPuma-fasta_batcher.pl -i $inFasta -ni 'i' -o $outFasta -c $CPU -t $CPU -u 1 -e 'perl mPuma-watered_blast.pl -d $dbFasta' -p blastn -h 0 -v 1
+        mPuma-fasta_batcher.pl -i $inFasta -ni 'i' -o $blastResults -c $CPU -t $CPU -u 1 -e 'perl mPuma-watered_blast.pl -d $dbFasta' -p blastn -h 0 -v 1
     
     </command>
     
@@ -20,7 +20,7 @@
 
     <outputs>
 
-        <data format="fasta" name="outFasta">
+        <data format="text" name="blastResults">
 
     </outputs>
 
@@ -28,7 +28,7 @@
 
 **About**
 
-    This script is part of the mPuma pipeline. This script filters clustered sequences by searching a database.
+    This script is part of the mPuma pipeline. Performs a BLAST search against a database.
 
 **Usage**
     
