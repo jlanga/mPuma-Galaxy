@@ -22,9 +22,9 @@
 
 **About**
 
-    This script is part of the mPuma pipeline. `c2e` splits each sequence by length `L` returning, for each sequence in FASTA format:
-        The first `L` nucleotides of the input sequence.
-        The first `L` nucleotides from the reverse complement of the input sequence.
+    This script is part of the mPuma pipeline. c2e splits each sequence by length L returning, for each sequence in FASTA format:
+        The first L nucleotides of the input sequence.
+        The first L nucleotides from the reverse complement of the input sequence.
 
 **Usage**
     
