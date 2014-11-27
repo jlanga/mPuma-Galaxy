@@ -3,24 +3,22 @@
     <desription>Performs a Watered BLAST over a fasta file (clustered reads)</desription>
 
     <command interpreter="perl">
-    
-        mPuma-fasta_batcher.pl -i $inFasta -ni 'i' -o $blastResults -c $CPU -t $CPU -u 1 -e 'perl mPuma-watered_blast.pl -d $dbFasta' -p blastn -h 0 -v 1
-    
+        /home/galaxy/galaxy-dist/tools/mPuma/mPuma-fasta_batcher.pl -i $inFasta -ni &apos;-i&apos; -o $blastResults -c $CPU -t $CPU -u 1 -e &apos;perl /home/galaxy/galaxy-dist/tools/mPuma/mPuma-watered_blast.pl -d $dbFasta -p blastn -h 0 -v 1&apos; 1&gt; /dev/null 2&gt; /dev/null ; rm fastaPiece*
     </command>
     
     <inputs>
 
-        <param name="inFasta"  type="data" format="fasta" label="FASTA file">
+        <param name="inFasta"  type="data" format="fasta" label="FASTA file"/>
 
-        <param name="CPU"      type="text" size="10" value="1" label="Number of CPUs to use">
+        <param name="CPU"      type="text" size="10" value="1" label="Number of CPUs to use"/>
 
-        <param name="database" type="data" format="fasta" label="FASTA database for CPN60">
+        <param name="dbFasta" type="data" format="blastdb" label="FASTA database for CPN60"/>
 
     </inputs>
 
     <outputs>
 
-        <data format="text" name="blastResults">
+        <data format="tabular" name="blastResults"/>
 
     </outputs>
 

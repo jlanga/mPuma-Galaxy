@@ -33,6 +33,14 @@ die "Error BLAST program must be either blastp or blastn. This is because a Smit
 # redirect stdout if there is a file to write to
 open(STDOUT,">$output_file") or die "Error opening $output_file for writting: $!" if (defined $output_file);
 
+##############################################
+## Correction for Galaxy 14/11/05 by jlanga ##
+##############################################
+#$blast_db =~ s/[.]dat//;
+#$blast_db = $blast_db . "_files/blastdb";
+#print $blast_db;
+
+
 # Ensure BLAST formated
 ensure_blast_formated($blast_db,$blast_prog);
 
@@ -196,7 +204,7 @@ sub cdbyank_seq{
 	if (!(-e $cdbfasta_file)){
 		die "Error fasta file does not exist" unless (-e $fasta_file);
 		# call cdbfasta on the input file if the indexed file does not exist already
-		system('cdbfasta',$fasta_file) == 0 or die "Error calling cdbfasta $cdbfasta_file: $?";
+		system('cdbfasta',$fasta_file,'-o', $cdbfasta_file) == 0 or die "Error calling cdbfasta $cdbfasta_file: $?";
 	}
         my $pid = open2(\*CHLD_OUT, \*CHLD_IN,'cdbyank',$cdbfasta_file) or die "Error calling open2: $!";
         print CHLD_IN "$id\n";
