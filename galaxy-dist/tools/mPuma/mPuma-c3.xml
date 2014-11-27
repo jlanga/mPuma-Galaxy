@@ -1,0 +1,40 @@
+<tool id="mPuma-c3" name="Make the C3 report " version="0.01">
+
+    <desription>Generates a C3 report from the watered blast results</desription>
+    <!-- <description>Creates a TOC that maps OTUs to reference genes. The input is a SAM file created by e.g. Bowtie2</description> -->
+
+    <command interpreter="perl">
+        c3.pl   -i  $inputFasta     -w  $wateredBlast   -h 0    -o $c3Report
+    </command>
+
+    <inputs>
+
+        <param name="inputFasta"    type="data" format="fasta"      label="FASTA"                   />
+
+        <param name="wateredBlast"  type="data" format="tabular"    label="Watered Blast Report"    />
+
+    </inputs>
+
+    <outputs>
+
+        <data format="tabular" name="c3report"/>
+
+    </outputs>
+
+    <help>
+
+**About**
+
+    This script is part of the mPuma pipeline. From a FASTA file and a Watered report file (result of mpuma-fasta_batcher) generates an intermediate report for c3extractChimericIDs
+
+**Usage**
+    
+    The FASTA file should be the one obtained after seqclean, and the reports from fasta_batcher.
+
+**Contact**
+
+    Please send any request or comment to mikel.egana.aranguren@gmail.com
+
+    </help>
+
+</tool>
