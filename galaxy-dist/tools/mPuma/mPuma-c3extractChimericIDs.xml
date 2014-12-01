@@ -9,7 +9,7 @@
     <!-- <command interpreter="perl">mPuma-create_ace_toc_SAM.pl -s $sorted $input_sam > $output </command> -->
     <inputs>
 
-        <param name="C3Report"  type="data"     format="tabular"    label="C3 Report">
+        <param name="C3Report"  type="data"     format="tabular"    label="C3 Report"/>
 
     </inputs>
 

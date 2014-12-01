@@ -4,7 +4,7 @@
     <!-- <description>Creates a TOC that maps OTUs to reference genes. The input is a SAM file created by e.g. Bowtie2</description> -->
 
     <command interpreter="perl">
-        c3.pl   -i  $inputFasta     -w  $wateredBlast   -h 0    -o $c3Report
+        mPuma-c3.pl   -i  $inputFasta     -w  $wateredBlast   -h 0    -o $c3Report
     </command>
 
     <inputs>
@@ -17,7 +17,7 @@
 
     <outputs>
 
-        <data format="tabular" name="c3report"/>
+        <data format="tabular" name="c3Report"/>
 
     </outputs>
 
