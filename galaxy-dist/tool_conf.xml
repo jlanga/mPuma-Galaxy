@@ -6,5 +6,8 @@
     <tool file="mPuma/mPuma-parse_cd-hit-est.xml"/>
     <tool file="mPuma/mPuma-fasta_batcher.xml"/>
     <tool file="mPuma/mPuma-c2e.xml"/>
+    <tool file="mPuma/mPuma-c3.xml"/>
+    <tool file="mPuma/mPuma-c3extractChimericIDs.xml"/>
+    <tool file="mPuma/mPuma-winnow.xml"/>
   </section>
 </toolbox>
