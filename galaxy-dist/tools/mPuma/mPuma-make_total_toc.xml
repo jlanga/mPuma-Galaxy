@@ -1,0 +1,67 @@
+<tool id="mPuma-make_total_toc" name="mPuma-make_total_toc" version="0.01">
+<!-- <tool id="mPuma-create_ace_toc_SAM" name="Create ace TOC from SAM file" version="0.0.1"> -->
+    <desription>
+        Creates a total.toc file
+    </desription>
+
+    <command interpreter="perl">mPuma-make_total_toc.pl -a $totalToc -total $totalFasta -toc $samToc -seqclean $seqcleanFasta -clusterReport $clusterReport -chimericIDsFile $chimericIDsFile -useChimeraCalls $useChimeric </command>
+
+    <inputs>
+
+        <param  name="totalFasta"       type="data"     format="fasta"  label="All reads in FASTA format"       />
+
+        <param  name="samToc"           type="data"     format="text"   label="TOC file from SAM"               />
+
+        <param  name="seqcleanFasta"    type="data"     format="fasta"  label="Clean FASTA file"                />
+
+        <param  name="clusterReport"    type="data"     format="text"   label="Cluster report from CD-HIT-EST"  />
+
+        <param  name="chimericIDsFile"  type="data"     format="text"   label="File of Chimeric Tags"           />
+
+        <param  name="useChimeric"      type="select"                   label="Use chimera calls?"              >
+
+            <option value="1"   selected="true" >Yes</option>
+
+            <option value="0"                   >No</option>
+
+        <param/>
+
+    </inputs>
+
+    <outputs>
+
+        <data   name="totalToc"                         format="text"                                           />
+
+    </outputs>
+
+    <help>
+
+**About**
+
+    This script is part of the mPuma pipeline. This script builds the total.toc file.
+
+**Usage**
+    
+    As inputs you should take:
+
+        All reads in FASTA format: The resulting file after appending all the fasta files used for assembly in Trinity.
+
+        TOC file from SAM: The resulting file after creating a toc file from multiple sam files (mPuma-create_ace_toc_SAM).
+
+        Clean FASTA file: the resulting fasta after using seqclean.
+
+        Cluster report from CD-HIT-EST: the report file generated after runing CD-HIT-EST.
+
+        File of Chimeric Tags: the resulting file after using mPuma-c3extractChimericIDs.
+
+        Use chimera calls: Yes (default). Use "no" to keep using reads that seem to be chimeras.
+
+    As output you will get a toc file containint the TOC file with the 
+
+**Contact**
+
+    Please send any request or comment to mikel.egana.aranguren@gmail.com
+
+    </help>
+
+</tool>

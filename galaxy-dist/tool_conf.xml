@@ -9,5 +9,6 @@
     <tool file="mPuma/mPuma-c3.xml"/>
     <tool file="mPuma/mPuma-c3extractChimericIDs.xml"/>
     <tool file="mPuma/mPuma-winnow.xml"/>
+    <tool file="mPuma/mPuma-make_total_toc.xml"
   </section>
 </toolbox>
